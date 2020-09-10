@@ -7,10 +7,12 @@
 using namespace std;
 int main(){
 LinkedList<int>*linkedList=new LinkedList<int>;
-
-    for (int i = 0; i < 5; ++i) {
+LinkedList<int>*linkedList2=new LinkedList<int>;
+    for (int i = 0; i <5 ; ++i) {
         linkedList->add(i);
+    linkedList2->add(i+55);
     }
-linkedList->remove(1);
+linkedList->concatenate(linkedList2);
+
 linkedList->displayAll();
 }
